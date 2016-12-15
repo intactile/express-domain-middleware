@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - 6
+env:
+- NODE_ENV=TEST
+cache:
+  directories:
+    - node_modules
+script: npm run test-cover
+after_script:
+  - npm install -g codeclimate-test-reporter
+  - codeclimate-test-reporter < ./coverage/lcov.info
