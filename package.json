@@ -2,7 +2,7 @@
   "name": "@intactile/express-domain-middleware",
   "version": "0.2.0",
   "description": "An express middleware providing domain informations ",
-  "main": "distribution/index.js",
+  "main": "distribution/domainMiddleware.js",
   "scripts": {
     "lint": "eslint src/*.js",
     "test": "jest",
