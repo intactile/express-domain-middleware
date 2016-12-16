@@ -29,10 +29,13 @@ const router = new Router();
 
 router.post('/login/', (request, response, next) => {
   const domainInfo = request.domainInfo;
+  console.log(domainInfo);
 });
 ```
+
 example :
+```
 domainInfo = { host: 'subdomain.example.com/login'
                subdomain : 'subdomain.example.com',
-               domain : 'example.com',
-             }
+               domain : 'example.com' }
+```
