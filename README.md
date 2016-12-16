@@ -16,8 +16,23 @@ npm install @intactile/express-domain-middleware
 
 ```javascript
 import express from 'express';
-import domainParser from '@intactile/express-domain-middleware';
+import domainMiddleware from '@intactile/express-domain-middleware';
 
 const app = express();
-app.use(domainParser());
+app.use(domainMiddleware());
 ```
+
+```javascript
+import { Router } from 'express';
+
+const router = new Router();
+
+router.post('/login/', (request, response, next) => {
+  const domainInfo = request.domainInfo;
+});
+```
+example :
+domainInfo = { host: 'subdomain.example.com/login'
+               subdomain : 'subdomain.example.com',
+               domain : 'example.com',
+             }
