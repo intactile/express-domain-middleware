@@ -1,6 +1,6 @@
 {
   "name": "@intactile/express-domain-middleware",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "An express middleware providing domain informations ",
   "main": "distribution/index.js",
   "scripts": {
@@ -21,8 +21,7 @@
     "url": "https://github.com/intactile/express-domain-middleware/issues"
   },
   "homepage": "https://github.com/intactile/express-domain-middleware#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-jest": "^17.0.2",
