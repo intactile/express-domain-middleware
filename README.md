@@ -35,7 +35,7 @@ router.post('/login/', (request, response, next) => {
 
 example :
 ```
-domainInfo = { host: 'app.brand.domain.com'
-               subdomain : 'brand.domain.com',
-               domain : 'domain.com' }
+domainInfo = { FQDN: 'app.brand.domain.com' // The Fully Qualified Domain Name
+               domain : 'brand.domain.com', // The domain name
+               host : 'domain.com' }        // The hostname
 ```

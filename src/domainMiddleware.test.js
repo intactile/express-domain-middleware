@@ -2,7 +2,7 @@ import domainMiddleware from './domainMiddleware';
 
 describe('server.auth.domainMiddleware', () => {
   const url = 'http://accounts.arcanae.fr/login';
-  const expectedDomainInfo = { host: 'accounts.arcanae.fr', subdomain: 'arcanae.fr', domain: 'arcanae.fr' };
+  const expectedDomainInfo = { FQDN: 'accounts.arcanae.fr', domain: 'arcanae.fr', host: 'accounts' };
   const domainFinder = domainMiddleware();
 
   it('should add the domain to the request using the host', () => {

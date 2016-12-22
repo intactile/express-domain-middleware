@@ -8,7 +8,7 @@ describe('server.auth.domainResolver', () => {
   });
 
   describe('for a simple domain', () => {
-    const expectedDomain = { host: 'arcanae.fr', subdomain: 'arcanae.fr', domain: 'arcanae.fr' };
+    const expectedDomain = { FQDN: 'arcanae.fr', domain: 'arcanae.fr', host: 'arcanae' };
 
     it('should get the domain', () => {
       expect(getDomain('http://arcanae.fr')).toEqual(expectedDomain);
@@ -16,7 +16,7 @@ describe('server.auth.domainResolver', () => {
   });
 
   describe('for a domain with single sub domain', () => {
-    const expectedDomain = { host: 'accounts.arcanae.fr', subdomain: 'arcanae.fr', domain: 'arcanae.fr' };
+    const expectedDomain = { FQDN: 'accounts.arcanae.fr', domain: 'arcanae.fr', host: 'accounts' };
 
     it('should get the domain', () => {
       expect(getDomain('http://accounts.arcanae.fr')).toEqual(expectedDomain);
@@ -27,7 +27,7 @@ describe('server.auth.domainResolver', () => {
   });
 
   describe('for a domain with subs domains', () => {
-    const expectedDomain = { host: 'accounts.arcanae.intactile.info', subdomain: 'arcanae.intactile.info', domain: 'intactile.info' };
+    const expectedDomain = { FQDN: 'accounts.arcanae.intactile.info', domain: 'arcanae.intactile.info', host: 'accounts' };
 
     it('should get the domain', () => {
       expect(getDomain('http://accounts.arcanae.intactile.info')).toEqual(expectedDomain);
