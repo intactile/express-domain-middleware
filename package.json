@@ -1,6 +1,6 @@
 {
   "name": "@intactile/express-domain-middleware",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "An express middleware providing domain informations ",
   "main": "distribution/domainMiddleware.js",
   "scripts": {
