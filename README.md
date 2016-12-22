@@ -35,7 +35,7 @@ router.post('/login/', (request, response, next) => {
 
 example :
 ```
-domainInfo = { host: 'subdomain.example.com/login'
-               subdomain : 'subdomain.example.com',
-               domain : 'example.com' }
+domainInfo = { host: 'app.brand.domain.com'
+               subdomain : 'brand.domain.com',
+               domain : 'domain.com' }
 ```
